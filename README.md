@@ -61,7 +61,7 @@ streamlit run app.py
 ---
 
 ## 📈 Results
-Random Forest achieved **XX% accuracy** on the test dataset.  
+Random Forest achieved **72% accuracy** on the test dataset.  
 
 Visualizations generated include:
 - Feature importance plots  
