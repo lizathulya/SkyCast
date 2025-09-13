@@ -1,4 +1,4 @@
-# SkyCast-# 🌦️ Predictive Analysis of Meteorological Events using Random Forest
+# SkyCast-🌦️ Predictive Analysis of Meteorological Events using Random Forest
 
 ## 📌 Overview
 This project applies machine learning (Random Forest) to predict meteorological events such as rainfall, storms, and temperature fluctuations.  
@@ -33,8 +33,8 @@ SkyCast/
 
 1️⃣ Clone the repository:
 ```bash
-git clone https://github.com/your-username/Weather-Prediction-Project.git
-cd Weather-Prediction-Project
+git clone https://github.com/lizathulya/SkyCast.git
+cd SkyCast
 ```
 
 2️⃣ Install dependencies:
