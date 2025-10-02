@@ -54,12 +54,6 @@ streamlit run app.py
 
 ---
 
-## 🌐 Live Demo
-👉 (Optional) Add the link if deployed to **Streamlit Cloud / Hugging Face Spaces / Heroku**:  
-🔗 Live Demo  
-
----
-
 ## 📈 Results
 Random Forest achieved **72% accuracy** on the test dataset.  
 
