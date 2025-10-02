@@ -1,7 +1,7 @@
 # SkyCast-🌦️ Predictive Analysis of Meteorological Events using Random Forest
 
 ## 📌 Overview
-This project applies machine learning (Random Forest) to predict meteorological events such as rainfall, storms, and temperature fluctuations.  
+This project applies Random Forest model to predict meteorological events such as rainfall, storms, and temperature fluctuations.  
 It demonstrates the complete pipeline of **data preprocessing → model training → evaluation → deployment via a Streamlit app.**
 
 ---
