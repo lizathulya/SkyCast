@@ -74,4 +74,7 @@ st.write(f"Predicted Event: **{prediction[0]}**")
 
 st.subheader("Prediction Probability")
 st.write(pd.DataFrame(prediction_proba, columns=model.classes_))
+st.write("Downloaded file size:", os.path.getsize(MODEL_PATH))
+
+
 
