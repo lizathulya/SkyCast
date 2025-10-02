@@ -14,7 +14,7 @@ st.set_page_config(page_title="Weather Event Predictor", page_icon="🌦", layou
 # Replace with your actual Google Drive FILE_ID
 # Example link: https://drive.google.com/file/d/1AbC1234XYZ/view?usp=sharing
 # FILE_ID = "1AbC1234XYZ"
-FILE_ID = "<1bxeLow-PCHdOQqzWkWOcB3L32MPC3RBU>"
+FILE_ID = "1bxeLow-PCHdOQqzWkWOcB3L32MPC3RBU"
 MODEL_URL = f"https://drive.google.com/file/d/1bxeLow-PCHdOQqzWkWOcB3L32MPC3RBU/view?usp=sharing"
 MODEL_PATH = "model.pkl"
 
@@ -76,4 +76,5 @@ st.write(f"Predicted Event: **{prediction[0]}**")
 
 st.subheader("Prediction Probability")
 st.write(pd.DataFrame(prediction_proba, columns=model.classes_))
+
 
