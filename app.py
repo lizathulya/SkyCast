@@ -1,24 +1,40 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import requests
+import os
 from sklearn.ensemble import RandomForestClassifier
 
 # -------------------------------
-# Load Trained Model
+# Config
 # -------------------------------
-# Make sure you save your trained model as model.pkl after training
-# Example:
-# with open("model.pkl", "wb") as f:
-#     pickle.dump(best_rf, f)
+st.set_page_config(page_title="Weather Event Predictor", page_icon="🌦", layout="centered")
 
-with open("model.pkl", "rb") as f:
-    model = pickle.load(f)
+MODEL_URL = "https://github.com/lizathulya/SkyCast/releases/download/v1.0.0/model.pkl"
+MODEL_PATH = "model.pkl"
+
+# -------------------------------
+# Download Model from Release (if not cached)
+# -------------------------------
+@st.cache_resource
+def load_model():
+    if not os.path.exists(MODEL_PATH):
+        with st.spinner("Downloading model..."):
+            r = requests.get(MODEL_URL, stream=True)
+            if r.status_code == 200:
+                with open(MODEL_PATH, "wb") as f:
+                    f.write(r.content)
+            else:
+                st.error("Failed to download model from release.")
+                st.stop()
+    with open(MODEL_PATH, "rb") as f:
+        return pickle.load(f)
+
+model = load_model()
 
 # -------------------------------
 # Streamlit UI
 # -------------------------------
-st.set_page_config(page_title="Weather Event Predictor", page_icon="🌦", layout="centered")
-
 st.title("🌦 Predictive Analysis of Meteorological Events")
 st.write("A machine learning app to forecast meteorological events using Random Forest.")
 
@@ -58,3 +74,4 @@ st.write(f"Predicted Event: **{prediction[0]}**")
 
 st.subheader("Prediction Probability")
 st.write(pd.DataFrame(prediction_proba, columns=model.classes_))
+
