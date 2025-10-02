@@ -1,4 +1,4 @@
-# SkyCast-🌦️ Predictive Analysis of Meteorological Events using Random Forest
+# 🌦️SkyCast-Predictive Analysis of Meteorological Events using Random Forest 🌦️
 
 ## 📌 Overview
 This project applies Random Forest model to predict meteorological events such as rainfall, storms, and temperature fluctuations.  
