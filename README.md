@@ -14,11 +14,11 @@ It demonstrates the complete pipeline of **data preprocessing → model training
 ## 📂 Project Structure
 ```
 SkyCast/
-├── app.py                      # Streamlit web app
-├── model.pkl                   # Trained Random Forest model
-├── Predictive_Analysis.ipynb   # Jupyter notebook with full workflow
-├── requirements.txt            # Dependencies
-└── README.md                   # Documentation
+├── app.py                           # Streamlit web app
+├── model.pkl(within the releases)   # Trained Random Forest model
+├── Predictive_Analysis.ipynb        # Jupyter notebook with full workflow
+├── requirements.txt                 # Dependencies
+└── README.md                        # Documentation
 ```
 
 
