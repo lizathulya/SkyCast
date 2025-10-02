@@ -4,8 +4,6 @@
 This project applies machine learning (Random Forest) to predict meteorological events such as rainfall, storms, and temperature fluctuations.  
 It demonstrates the complete pipeline of **data preprocessing → model training → evaluation → deployment via a Streamlit app.**
 
-👉 **Goal:** Showcase practical ML skills and end-to-end deployment in a professional portfolio project.
-
 ---
 
 ## 🛠️ Tech Stack
