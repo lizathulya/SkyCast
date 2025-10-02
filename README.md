@@ -4,16 +4,12 @@
 This project applies Random Forest model to predict meteorological events such as rainfall, storms, and temperature fluctuations.  
 It demonstrates the complete pipeline of **data preprocessing → model training → evaluation → deployment via a Streamlit app.**
 
----
-
 ## 🛠️ Tech Stack
 - **Languages:** Python  
 - **Libraries:** pandas, numpy, scikit-learn, matplotlib, seaborn  
 - **ML Model:** Random Forest Classifier  
 - **Deployment:** Streamlit  
 - **Version Control:** Git & GitHub  
-
----
 
 ## 📂 Project Structure
 ```
@@ -25,7 +21,6 @@ SkyCast/
 └── README.md                   # Documentation
 ```
 
----
 
 ## 🚀 How to Run Locally
 
@@ -50,8 +45,6 @@ jupyter notebook Predictive_Analysis.ipynb
 streamlit run app.py
 ```
 
----
-
 ## 📈 Results
 Random Forest achieved **72% accuracy** on the test dataset.  
 
@@ -60,7 +53,6 @@ Visualizations generated include:
 - Confusion matrix  
 - Prediction outputs for new inputs  
 
----
 
 ## ✨ Key Learnings
 - Applied supervised learning with Random Forest  
